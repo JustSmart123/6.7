@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Доступний і цікавий сайт для дітей з веселими іграми, навчанням та розвагами.">
+    <title>Веселий світ для дітей</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header, nav, main, footer {
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            background-color: #ffdd59;
+        }
+        nav {
+            background-color: #ff6b81;
+            color: #fff;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        main {
+            background-color: #dff9fb;
+        }
+        footer {
+            background-color: #c7ecee;
+            text-align: center;
+        }
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            z-index: 100;
+            text-decoration: none;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #74b9ff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Пропустити до основного вмісту</a>
+    
+    <header>
+        <h1>Веселий світ для дітей</h1>
+        <p>Відкрийте для себе світ ігор, навчання та розваг!</p>
+    </header>
+
+    <nav>
+        <a href="#games">Ігри</a>
+        <a href="#education">Навчання</a>
+        <a href="#fun">Розваги</a>
+    </nav>
+
+    <main id="main-content">
+        <section id="games">
+            <h2>Ігри</h2>
+            <p>Грайте в захопливі ігри та змагайтеся з друзями!</p>
+            <img src="images/games.jpg" alt="Діти грають у настільні ігри" width="300">
+        </section>
+
+        <section id="education">
+            <h2>Навчання</h2>
+            <p>Дізнайтеся нове з інтерактивними уроками!</p>
+            <table>
+                <caption>Розклад уроків</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">День</th>
+                        <th scope="col">Тема</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Понеділок</th>
+                        <td>Математика</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Вівторок</th>
+                        <td>Наука</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="fun">
+            <h2>Розваги</h2>
+            <p>Відкрийте для себе веселі відео та кумедні історії!</p>
+            <video controls>
+                <source src="videos/fun.mp4" type="video/mp4">
+                <track src="subtitles/fun.vtt" kind="subtitles" srclang="uk" label="Українська">
+                Ваш браузер не підтримує відео.
+            </video>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Веселий світ для дітей</p>
+    </footer>
+</body>
+</html>
